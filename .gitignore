@@ -1,0 +1,8 @@
+bin/
+obj/
+/dist/
+release/
+release-*/
+packaging/windows/msix/artifacts/
+site/dist/downloads/
+*.user

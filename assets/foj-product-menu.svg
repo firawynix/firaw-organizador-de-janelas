@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <!-- Simplified four-loop Firaw knot for the 16 px Products menu. -->
+  <g transform="translate(64 64) scale(.91) translate(-64 -64)" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 64 C52 51 41 42 41 29 C41 17 50 10 64 10 C78 10 87 17 87 29 C87 42 76 51 64 64"/>
+    <path d="M64 64 C77 52 86 41 99 41 C111 41 118 50 118 64 C118 78 111 87 99 87 C86 87 77 76 64 64"/>
+    <path d="M64 64 C76 77 87 86 87 99 C87 111 78 118 64 118 C50 118 41 111 41 99 C41 86 52 77 64 64"/>
+    <path d="M64 64 C51 76 42 87 29 87 C17 87 10 78 10 64 C10 50 17 41 29 41 C42 41 51 52 64 64"/>
+  </g>
+</svg>

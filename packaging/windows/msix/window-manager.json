@@ -1,0 +1,13 @@
+{
+  "storeIdentityName": "Firawynix.Firaw-OrganizadordeJanelas",
+  "siteIdentityName": "Firawynix.WindowManager",
+  "applicationId": "FirawWindowManager",
+  "displayName": "Firaw - Organizador de Janelas",
+  "publisherDisplayName": "Firawynix",
+  "description": "Organize janelas por programa, monitor e tipo de janela",
+  "version": "1.0.0",
+  "architecture": "x64",
+  "payloadPath": "../../../release/FirawynixWindowManager.exe",
+  "executable": "FirawynixWindowManager.exe",
+  "icon": "../../../assets/celtic-knot-transparent.png"
+}
