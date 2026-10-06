@@ -6,6 +6,19 @@ Aplicativo independente para Windows que salva uma área e um critério para cad
 - [Download para Windows x64](https://github.com/firawynix/firaw-organizador-de-janelas/releases/download/v0.3.2/FirawynixWindowManager.exe)
 - [Ícone do menu Produtos](assets/foj-product-menu.png) em PNG monocromático transparente de 128 × 128 px
 
+## Instalador para o Firawynix Center
+
+O script `packaging/windows/inno/foj.iss` empacota o executável e as bibliotecas nativas da publicação Windows x64. Ele instala silenciosamente com `/VERYSILENT` e registra a versão em **Aplicativos instalados**.
+
+- Versão inicial: `0.3.2`
+- AppId fixo: `{625CF0E9-A58A-4952-AD93-2D5A81CFD782}`
+- Chave de desinstalação: `{625CF0E9-A58A-4952-AD93-2D5A81CFD782}_is1`
+- Executável relativo à pasta instalada: `FirawynixWindowManager.exe`
+- Pasta padrão: `%LOCALAPPDATA%\Programs\Firawynix\Organizador de Janelas`
+- Arte do catálogo: `packaging/windows/center/art` (capa 600×800, banner 1920×620 e ícone transparente 256×256)
+
+O instalador destinado ao Center é assinado com SHA-256 e carimbo de tempo pelo certificado Firawynix aceito no painel. A publicação do arquivo hospedado segue o guia do portfólio `docs/CENTER-PUBLICAR-PELO-PAINEL.md`.
+
 O ícone exclusivo do organizador é um nó celta ciano de quatro laços, sem fundo, aplicado ao executável, às janelas e à área de notificação. Os arquivos usados ficam em `assets/celtic-knot-transparent.png` e `assets/celtic-knot-transparent.ico`.
 
 ## Como usar
