@@ -3,7 +3,7 @@
 Aplicativo independente para Windows que salva uma área e um critério para cada tipo de janela de um programa. A interface usa o mesmo visual escuro e ciano do Firaw SnapCopyText.
 
 - [Site público de demonstração](https://lab.firawynix.com.br/foj/)
-- [Download para Windows x64](https://github.com/firawynix/firaw-organizador-de-janelas/releases/download/v0.3.2/FirawynixWindowManager.exe)
+- [Instalador para Windows x64](https://github.com/firawynix/firaw-organizador-de-janelas/releases/download/v0.3.2/Firaw-Organizador-de-Janelas-Setup-x64-0.3.2.exe)
 - [Ícone do menu Produtos](assets/foj-product-menu.png) em PNG monocromático transparente de 128 × 128 px
 
 ## Instalador para o Firawynix Center
