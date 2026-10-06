@@ -7,7 +7,7 @@ Antes de publicar, confira o pacote com `lab-remoto previa` e envie a pasta
 `site/dist` como site estático público com o nome `foj`, conforme
 `G:\firawos\workspace\lab-sandbox\LAB-AGENTES.md`.
 
-O executável público é distribuído pelo GitHub Releases. O site no lab não
+O executável público é distribuído pelo [GitHub Releases](https://github.com/firawynix/firaw-organizador-de-janelas/releases/tag/v0.3.2). O site no lab não
 carrega a cópia local em `site/dist/downloads`, que é ignorada pelo Git e
 deve ser removida da pasta enviada ao lab.
 

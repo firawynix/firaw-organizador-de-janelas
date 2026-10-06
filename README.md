@@ -2,6 +2,10 @@
 
 Aplicativo independente para Windows que salva uma área e um critério para cada tipo de janela de um programa. A interface usa o mesmo visual escuro e ciano do Firaw SnapCopyText.
 
+- [Site público de demonstração](https://lab.firawynix.com.br/foj/)
+- [Download para Windows x64](https://github.com/firawynix/firaw-organizador-de-janelas/releases/download/v0.3.2/FirawynixWindowManager.exe)
+- [Ícone do menu Produtos](assets/foj-product-menu.png) em PNG monocromático transparente de 128 × 128 px
+
 O ícone exclusivo do organizador é um nó celta ciano de quatro laços, sem fundo, aplicado ao executável, às janelas e à área de notificação. Os arquivos usados ficam em `assets/celtic-knot-transparent.png` e `assets/celtic-knot-transparent.ico`.
 
 ## Como usar
