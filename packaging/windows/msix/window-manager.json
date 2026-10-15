@@ -5,9 +5,16 @@
   "displayName": "Firaw - Organizador de Janelas",
   "publisherDisplayName": "Firawynix",
   "description": "Organize janelas por programa, monitor e tipo de janela",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "architecture": "x64",
-  "payloadPath": "../../../release/FirawynixWindowManager.exe",
+  "payloadPath": "../../../release-store-1.0.1",
+  "requiredPayloadFiles": [
+    "D3DCompiler_47_cor3.dll",
+    "PenImc_cor3.dll",
+    "PresentationNative_cor3.dll",
+    "vcruntime140_cor3.dll",
+    "wpfgfx_cor3.dll"
+  ],
   "executable": "FirawynixWindowManager.exe",
   "icon": "../../../assets/celtic-knot-transparent.png"
 }

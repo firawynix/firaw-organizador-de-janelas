@@ -52,6 +52,26 @@ O aplicativo precisa estar em execução para aplicar as regras quando novas jan
 
 ## Compilar
 
+### Pacote Microsoft Store
+
+O canal Store usa versão independente da edição do site. Para gerar o
+MSIX **1.0.1.0**, sem assinatura local:
+
+```powershell
+.\tools\msix\build-store.ps1
+```
+
+O script publica com `Version=1.0.1`, mantém as DLLs nativas do WPF
+ao lado do executável e empacota a pasta `release-store-1.0.1` inteira.
+O build recusa DLL obrigatória ausente ou versão interna divergente.
+Não use apenas o `.exe` como payload: o MSIX 1.0.0.0 publicado omitiu
+essas DLLs e encerrou com `DllNotFoundException` no teste de abertura.
+
+Resultado: `packaging/windows/msix/artifacts/`.
+O script não instala, assina ou envia o pacote. O Hugo confere a versão
+mais recente no Partner Center antes do envio. O EXE do site continua
+na versão 0.3.2; não há substituição do download público nesta mudança.
+
 Requer o SDK .NET 10 no Windows:
 
 ```powershell

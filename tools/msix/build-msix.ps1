@@ -151,6 +151,18 @@ try {
         throw "Executável não encontrado no payload: $executablePath"
     }
 
+    # Single-file do .NET nao inclui por padrao as bibliotecas nativas do WPF.
+    foreach ($required in $settings.requiredPayloadFiles) {
+        if ([IO.Path]::GetFileName($required) -cne $required -or
+            -not (Test-Path -LiteralPath (Join-Path $appDirectory $required) -PathType Leaf)) {
+            throw "Biblioteca nativa obrigatoria ausente no payload: $required"
+        }
+    }
+    $exeVersion = (Get-Item -LiteralPath $executablePath).VersionInfo.FileVersion
+    if ($exeVersion -ne $version) {
+        throw "Versao do executavel ($exeVersion) diferente do MSIX ($version). Use build-store.ps1."
+    }
+
     New-Logo $icon (Join-Path $assetsDirectory 'StoreLogo.png') 50
     New-Logo $icon (Join-Path $assetsDirectory 'Square44x44Logo.png') 44
     New-Logo $icon (Join-Path $assetsDirectory 'Square150x150Logo.png') 150
@@ -290,6 +302,12 @@ $fileTypeItems
     } | ConvertTo-Json
 } finally {
     if (Test-Path -LiteralPath $workRoot) {
+        $resolvedWorkRoot = (Resolve-Path -LiteralPath $workRoot).Path
+        $tempRoot = (Resolve-Path -LiteralPath ([IO.Path]::GetTempPath())).Path.TrimEnd('\')
+        if ((Split-Path -Parent $resolvedWorkRoot) -ine $tempRoot -or
+            (Split-Path -Leaf $resolvedWorkRoot) -notmatch '^firaw-msix-[0-9a-f]{32}$') {
+            throw 'Pasta temporaria fora do escopo; limpeza cancelada.'
+        }
         Remove-Item -LiteralPath $workRoot -Recurse -Force
     }
 }
